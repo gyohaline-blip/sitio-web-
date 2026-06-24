@@ -1,0 +1,129 @@
+==========================================================
+ SITIO WEB — COMUNIDAD DE CALPULALPAN, JILOTEPEC, EDOMEX
+==========================================================
+
+¡Hola! Este es el sitio web de tu comunidad. No necesitas saber
+programar para usarlo: todo el texto está en archivos .html que
+puedes abrir y editar con cualquier editor de texto simple
+(Bloc de notas, Notepad++, VS Code, etc.).
+
+----------------------------------------------------------
+1. ESTRUCTURA DEL PROYECTO
+----------------------------------------------------------
+calpulalpan/
+├── index.html              → Página de inicio
+├── css/                     → Estilos visuales (no tocar si no es necesario)
+│   ├── estilos.css
+│   └── patron.css
+├── js/
+│   └── main.js              → Funciones del menú, galería y formulario
+├── img/
+│   └── galeria/              → AQUÍ VAN TUS FOTOS
+└── paginas/
+    ├── historia.html
+    ├── galeria.html
+    ├── avisos.html
+    ├── directorio.html
+    └── contacto.html
+
+----------------------------------------------------------
+2. CÓMO AGREGAR TUS FOTOGRAFÍAS
+----------------------------------------------------------
+Paso 1: Copia tus imágenes (.jpg, .png o .webp) dentro de la
+        carpeta:  img/galeria/
+
+        Sugerencia: usa nombres sin espacios ni acentos, por
+        ejemplo: parroquia.jpg, carnaval-xhitas.jpg, plaza.jpg
+
+Paso 2: Abre el archivo paginas/galeria.html con un editor de
+        texto. Dentro encontrarás un bloque de ejemplo comentado
+        que dice "EJEMPLO DE BLOQUE DE FOTO". Cópialo y pégalo
+        las veces que necesites, cambiando:
+
+          - src="../img/galeria/foto1.jpg"  → por el nombre real
+            de tu archivo
+          - alt="Descripción breve de la foto" → por una
+            descripción corta (ayuda a la accesibilidad)
+          - el texto dentro de <span class="pie">...</span>
+            → por el pie de foto que quieras mostrar
+
+Paso 3: Borra (o deja comentado) el bloque "galeria-vacia"
+        una vez que ya tengas al menos una foto agregada.
+
+También puedes usar fotos en la página de inicio (index.html):
+busca los bloques con class="img-cubierta marcador" y
+sustitúyelos por: <img src="img/galeria/tu-foto.jpg" alt="...">
+
+----------------------------------------------------------
+3. CÓMO EDITAR TEXTOS (avisos, directorio, historia, etc.)
+----------------------------------------------------------
+- AVISOS: abre paginas/avisos.html y copia/edita los bloques
+  <div class="aviso">...</div>
+
+- DIRECTORIO: abre paginas/directorio.html y copia/edita los
+  bloques <div class="directorio-item">...</div>
+
+- HISTORIA: abre paginas/historia.html y edita los párrafos o
+  los bloques de la línea de tiempo <div class="evento-tiempo">
+
+- CONTACTO: abre paginas/contacto.html y reemplaza el teléfono,
+  correo y horario de ejemplo por los datos reales.
+
+----------------------------------------------------------
+4. EL FORMULARIO DE CONTACTO
+----------------------------------------------------------
+El formulario de la página de contacto es solo una demostración
+visual: por ahora no envía correos reales. Para que los mensajes
+lleguen a un correo de verdad, tienes dos opciones gratuitas:
+
+  Opción A: Formspree (https://formspree.io)
+    1. Crea una cuenta gratuita.
+    2. Copia el "endpoint" que te dan.
+    3. En paginas/contacto.html, cambia la etiqueta:
+         <form class="form-contacto" id="form-contacto">
+       por:
+         <form class="form-contacto" action="TU_ENLACE_DE_FORMSPREE" method="POST">
+    4. Elimina el atributo id="form-contacto" si quieres que
+       envíe de verdad (ya no usará el mensaje de demostración).
+
+  Opción B: Web3Forms (https://web3forms.com)
+    Funciona de forma muy similar, con su propio panel gratuito.
+
+----------------------------------------------------------
+5. CÓMO PUBLICAR TU SITIO GRATIS EN INTERNET
+----------------------------------------------------------
+Tienes varias opciones gratuitas y sencillas:
+
+  • Netlify Drop (https://app.netlify.com/drop)
+    Arrastra la carpeta completa "calpulalpan" a la página y
+    en segundos tendrás un enlace público.
+
+  • GitHub Pages (https://pages.github.com)
+    Sube los archivos a un repositorio de GitHub y activa
+    GitHub Pages desde la configuración del repositorio.
+
+  • Cloudflare Pages (https://pages.cloudflare.com)
+    Similar a Netlify, también gratuito.
+
+En todos los casos, sube la carpeta completa "calpulalpan" (no
+solo el archivo index.html) para que las imágenes, estilos y
+scripts funcionen correctamente.
+
+----------------------------------------------------------
+6. EL MAPA DE LA PÁGINA DE CONTACTO
+----------------------------------------------------------
+El mapa usa Google Maps de forma gratuita (sin necesidad de
+clave/API). Si quieres centrarlo en un punto más exacto, ve a
+Google Maps, busca el lugar, da clic en "Compartir" → "Insertar
+un mapa", copia el enlace que aparece dentro de src="..." y
+sustitúyelo en paginas/contacto.html dentro de la etiqueta
+<iframe>.
+
+----------------------------------------------------------
+7. ¿NECESITAS AYUDA?
+----------------------------------------------------------
+Puedes volver a esta conversación y pedir que se agregue
+cualquier información, página o sección nueva, o que se
+inserten las fotos que tengas — solo compártelas aquí.
+
+¡Éxito con el sitio de Calpulalpan!

@@ -1,0 +1,6 @@
+/* Patrón de fondo: líneas topográficas / curvas de nivel
+   inspiradas en mapas de archivo del territorio.
+   Se usa como variable --patron-mapa en estilos.css */
+:root {
+  --patron-mapa: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='640' viewBox='0 0 640 640'%3E%3Cg fill='none' stroke='%23F7F3EB' stroke-width='1'%3E%3Cpath d='M0 120 Q160 60 320 120 T640 120'/%3E%3Cpath d='M0 200 Q160 140 320 200 T640 200'/%3E%3Cpath d='M0 280 Q160 220 320 280 T640 280'/%3E%3Cpath d='M0 360 Q160 300 320 360 T640 360'/%3E%3Cpath d='M0 440 Q160 380 320 440 T640 440'/%3E%3Cpath d='M0 520 Q160 460 320 520 T640 520'/%3E%3Ccircle cx='320' cy='300' r='4' fill='%23F7F3EB' stroke='none'/%3E%3Cpath d='M320 300 L320 270' /%3E%3C/g%3E%3C/svg%3E");
+}

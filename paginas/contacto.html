@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — Calpulalpan, Jilotepec</title>
+<meta name="description" content="Información de contacto y ubicación de la comunidad de Calpulalpan, Jilotepec, Estado de México.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/patron.css">
+<link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+<div class="membrete">
+  <div class="envolvente">
+    <span>MUNICIPIO DE JILOTEPEC · ESTADO DE MÉXICO</span>
+    <span>20.0556° N, 99.6358° O · ALT. 2,700 M</span>
+  </div>
+</div>
+
+<header class="encabezado">
+  <div class="envolvente">
+    <div class="marca">
+      <svg class="escudo" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Emblema de Calpulalpan">
+        <circle cx="24" cy="24" r="23" stroke="#7A2E27" stroke-width="2"/>
+        <path d="M24 8 L36 18 V30 L24 40 L12 30 V18 Z" stroke="#1F3A2E" stroke-width="1.6" fill="none"/>
+        <path d="M24 16 L24 32 M17 22 L31 22" stroke="#C9A24B" stroke-width="1.6"/>
+      </svg>
+      <div class="marca-texto">
+        <span class="eyebrow">Comunidad de</span>
+        <h1>Calpulalpan</h1>
+      </div>
+    </div>
+    <button class="btn-menu" aria-expanded="false" aria-controls="menu-principal">☰ Menú</button>
+    <nav class="principal" id="menu-principal">
+      <a href="../index.html">Inicio</a>
+      <a href="historia.html">Historia</a>
+      <a href="galeria.html">Galería</a>
+      <a href="avisos.html">Avisos</a>
+      <a href="directorio.html">Directorio</a>
+      <a href="contacto.html" class="activa">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<section class="banner-pagina">
+  <div class="envolvente">
+    <span class="eyebrow">Hablemos</span>
+    <h2>Contacto</h2>
+    <p class="migas"><a href="../index.html">Inicio</a> / Contacto</p>
+  </div>
+</section>
+
+<section>
+  <div class="envolvente">
+    <div class="cuadricula cuadricula-2" style="gap:48px; align-items:start;">
+
+      <div>
+        <div class="cabecera-seccion">
+          <span class="eyebrow">Envíanos un mensaje</span>
+          <h2>Escríbenos</h2>
+          <p>Completa el formulario para enviar dudas, sugerencias o comentarios a la comunidad.</p>
+        </div>
+
+        <form class="form-contacto" id="form-contacto">
+          <div class="fila-doble">
+            <div class="campo">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="campo">
+              <label for="telefono">Teléfono (opcional)</label>
+              <input type="tel" id="telefono" name="telefono">
+            </div>
+          </div>
+          <div class="campo">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" required>
+          </div>
+          <div class="campo">
+            <label for="asunto">Asunto</label>
+            <select id="asunto" name="asunto">
+              <option>Información general</option>
+              <option>Aviso o comunicado</option>
+              <option>Negocio en el directorio</option>
+              <option>Fotografías para la galería</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+          </div>
+          <p class="nota-form">Nota: este formulario es una demostración visual. Para que los mensajes lleguen a un correo real, conéctalo a un servicio gratuito como Formspree o Web3Forms (instrucciones en el archivo LEEME.txt).</p>
+          <div>
+            <button type="submit" class="btn btn-primario">Enviar mensaje</button>
+          </div>
+          <p id="estado-form" style="display:none; background:var(--papel-oscuro); padding:12px 16px; border-radius:var(--radio); font-size:.9rem; color:var(--monte-oscuro);"></p>
+        </form>
+      </div>
+
+      <div>
+        <div class="tarjeta-info" style="margin-bottom:20px;">
+          <h3>📍 Ubicación</h3>
+          <p>Calpulalpan, municipio de Jilotepec<br>Estado de México, México<br>Altitud: 2,700 m<br>Coordenadas: 20.0556° N, 99.6358° O</p>
+        </div>
+        <div class="tarjeta-info" style="margin-bottom:20px;">
+          <h3>☎️ Contacto comunitario</h3>
+          <p>Teléfono: (000) 000 0000 <em>(editar con el número real)</em><br>Correo: contacto@ejemplo.com <em>(editar)</em></p>
+        </div>
+        <div class="tarjeta-info" style="margin-bottom:20px;">
+          <h3>🕒 Atención</h3>
+          <p>Lunes a viernes, 9:00 a 17:00 hrs <em>(editar con el horario real, si aplica a alguna oficina vecinal)</em></p>
+        </div>
+        <div class="solo-lectura-mapa">
+          <iframe
+            src="https://www.google.com/maps?q=Calpulalpan,Jilotepec,Estado+de+M%C3%A9xico&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa de Calpulalpan, Jilotepec">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="envolvente">
+    <div class="pie-grid">
+      <div>
+        <h4>Calpulalpan</h4>
+        <p>Localidad del municipio de Jilotepec, Estado de México. Sitio creado por y para la comunidad.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="historia.html">Historia</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="avisos.html">Avisos</a></li>
+          <li><a href="directorio.html">Directorio</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Ubicación</h4>
+        <p>Jilotepec, Estado de México<br>20.0556° N, 99.6358° O<br>Altitud: 2,700 m</p>
+      </div>
+    </div>
+    <div class="pie-legal">
+      <span>© <span data-anio-actual>2026</span> Comunidad de Calpulalpan, Jilotepec.</span>
+      <span>Sitio informativo no oficial, hecho por vecinos de la comunidad.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

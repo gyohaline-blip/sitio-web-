@@ -1,0 +1,11 @@
+Esta carpeta ya contiene 13 fotografías de la comunidad de
+Calpulalpan, agregadas el 19 de junio de 2026.
+
+¿Quieres agregar más fotos? Copia aquí tus nuevas imágenes
+(.jpg, .png, .webp) y luego abre el archivo:
+paginas/galeria.html
+para copiar un bloque <div class="galeria-item"> nuevo,
+siguiendo el ejemplo comentado en el código.
+
+Más detalles en el archivo LEEME.txt de la carpeta principal.
+
